@@ -212,9 +212,7 @@ def big_shoe_rebounds
   biggest_shoe = 0
   num_rebounds = 0
 
-  game_data = game_hash.values.find do |team|
-    team.fetch(:players)
-  end
+  game_data = game_hash.values
 
 game_data
 binding.pry
