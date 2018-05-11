@@ -185,7 +185,7 @@ def player_numbers(team_name)
   new_variable = game_hash.values.find do |team|
     team.fetch(:team_name) == "team_name"
   end
-
+new_variable
   new_variable[:players].map do |players, stats|
     stats[:number]
   end
