@@ -215,7 +215,7 @@ def big_shoe_rebounds
     team.fetch(:players)
   end
 
-    game_data[:players].map do |player, game_stats|
+    game_data[:players].each do |player, game_stats|
       if game_stats[:shoe] > biggest_shoe
         biggest_shoe = game_stats[:shoe]
         num_rebounds = game_stats[:rebounds]
