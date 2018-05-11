@@ -187,7 +187,7 @@ def player_numbers(team_name)
   end
 
   new_variable
-
+  binding.pry
   new_variable[:players].map do |players, stats|
     stats[:number]
   end
