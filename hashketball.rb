@@ -186,8 +186,7 @@ def player_numbers(team_name)
     team.fetch(:team_name) == team_name
   end
 
-  new_variable
-  binding.pry
+
   new_variable[:players].map do |players, stats|
     stats[:number]
   end
@@ -217,6 +216,8 @@ def big_shoe_rebounds
     team.fetch(:players)
   end
 
+game_data
+binding.pry
     game_data[:players].each do |player, game_stats|
       if game_stats[:shoe] > biggest_shoe
         biggest_shoe = game_stats[:shoe]
